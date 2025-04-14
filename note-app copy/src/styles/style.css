@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a2b48;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Georgia", serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #2d3b60;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #3f4a68;
+  background-color: #2a3554;
+  color: white;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f1b847;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d99a39;
+}
+
+grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  grid-row-gap: 80px;
+  margin-top: 20px;
+  padding: 10px;
+}
+loading-indicator {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.buttonn {
+  background-color: #f1b847;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.buttonn:hover {
+  background-color: #d99a39;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  note-grid {
+    grid-template-columns: 1fr;
+  }
+}
